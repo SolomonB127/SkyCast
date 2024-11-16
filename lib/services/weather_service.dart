@@ -24,7 +24,7 @@ class WeatherService {
   }
 
   // Location method
-  Future<String> geLocation() async {
+  Future<String> getLocation() async {
     // get permission from user
     LocationPermission locationPermission = await Geolocator.checkPermission();
     if (locationPermission == LocationPermission.denied) {
